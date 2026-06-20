@@ -2,7 +2,7 @@ aid: good-manufacturing-practices
 name: Good Manufacturing Practices
 description: A system of processes, procedures, and documentation that ensures products are consistently produced and controlled according to quality standards, commonly used in pharmaceutical, food, and medical device manufacturing. Proper implementation reduces legal and operational risk while supporting audit readiness.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Compliance
   - Manufacturing
