@@ -34,7 +34,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/good-manufacturing-practices/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-04-28'
+modified: '2026-09-12'
 specificationVersion: '0.23'
 apis: []
 common:
@@ -47,3 +47,27 @@ maintainers:
     email: kin@apievangelist.com
 x-parent: food-and-drug-administration
 x-relationship: product
+x-enrichment:
+  date: '2026-09-12'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Good Manufacturing Practices is a US FDA regulatory quality regime (21 CFR 210/211),
+    not a vendor: the only host this record names is fda.gov, whose cGMP page serves
+    human regulatory prose while /openapi.json, /llms.txt and every /.well-known/ path
+    return the FDA 404 page — the agency's own openFDA contracts are profiled separately
+    under all/food-and-drug-administration.
+  evidence:
+    - url: https://www.fda.gov/drugs/pharmaceutical-quality-resources/facts-about-current-good-manufacturing-practices-cgmps
+      status: 200
+    - url: https://www.fda.gov/openapi.json
+      status: 404
+    - url: https://www.fda.gov/.well-known/api-catalog
+      status: 404
+    - url: https://www.fda.gov/llms.txt
+      status: 404
+  checked: '2026-09-12'
